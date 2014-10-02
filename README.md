@@ -7,13 +7,13 @@ Created by Taylor Rose September 24, 2014
 <h2>Install and Use</h2>
 </p><br>
 
-1. Enable the Developer tab/ribbon and click on the Visual Basic button in the far left corner to bring up Visual Basic Editor (alt+F11 or fn+alt+F11 on Mac parallels)
+1. Enable the Developer tab/ribbon and click on the Visual Basic button in the far left corner to bring up Visual Basic Editor ( <alt+F11> or <fn+alt+F11> on Mac parallels)
 
-2. Go to file > Import File... (Ctl+m) and select ATID Interpret.bas
+2. Go to file > Import File... ( <Ctl+m> ) and select ATID Interpret.bas
 
 3. Close Visual Basic Editor window to return to your spreadsheet. Select the tab you want to store your lookup information. NOTE: ATID Interpret looksup values as strings so you may need to convert the first column from integers to strings. Insert a new first column and use formula `=text(b2,"0")` in cell A2.
 
-4. Call the atidInterpret function in the cell you'd like the interpretation to reside. The function takes 4 parameters: `ATIDString` , `vlRange` , `primaryColumn` , `secondaryColumn`. You can see these parameters by calling `=atidInterpret` in your fomula bar and hitting Ctl+Shift+A.
+4. Call the atidInterpret function in the cell you'd like the interpretation to reside. The function takes 4 parameters: `ATIDString` , `vlRange` , `primaryColumn` , `secondaryColumn`. You can see these parameters by calling `=atidInterpret` in your fomula bar and hitting <Ctl+Shift+A>.
 
 <h2>Parameters </h2> 
 
