@@ -4,7 +4,7 @@ ATID Interpret
 
 Use a lookup table to convert an ATID string to a readable attribution list:
 
-`28386:20220:28386:20203` => ` 1)Organic Search 2)Wireless 3)Organic Search 4)Unbranded`
+`28386:20220:28386:20203` ---> ` 1)Organic Search 2)Wireless 3)Organic Search 4)Unbranded`
 
 <h2>Install and Use</h2>
 
