@@ -17,16 +17,16 @@ Created by Taylor Rose September 24, 2014
 
 <h2>Parameters </h2> 
 
-*Formula Example:* `atidInterpret(ATIDString , vlRange , primaryColumn , secondayColumn)` , e.g. , `=atidInterpret(b2,Sheet2!A:F,6,5)`
+*Formula Example:* `atidInterpret(ATIDString , vlRange , primaryColumn , secondayColumn)` , *e.g.* , `=atidInterpret(b2,Sheet2!A:F,6,5)`
 
 
-`ATIDString` - The ATID colon deliminated string you'd like to interpet, e.g., `28386:20220:20203` or `b2`
+`ATIDString` - The ATID colon deliminated string you'd like to interpet, *e.g.* , `28386:20220:20203` or `b2`
 <br>
-`vlRange` - The range of the lookup table you're using to interpret ATID, e.g., `Sheet2!A:F`
+`vlRange` - The range of the lookup table you're using to interpret ATID, *e.g.*, `Sheet2!A:F`
 <br>
-`primaryColumn` - The number of the column you want to pass as your primary interpretation, e.g. , `6`
+`primaryColumn` - The number of the column you want to pass as your primary interpretation, *e.g.* , `6`
 <br>
-`secondayColumn` - The number of the column you want to pass as a fallback if the primary column you select is blank or "NULL" on certain rows
+`secondayColumn` - The number of the column you want to pass as a fallback if the primary column you select is blank or "NULL" on certain rows, *e.g.* , `5`
 
 
 
