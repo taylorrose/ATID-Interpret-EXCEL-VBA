@@ -29,42 +29,6 @@ atidInterpret = Vlook2
 
 
 End Function
-Function CountRegEx(ISIN As String, RegExpression As String)
-
-    Dim RegEx As Object
-    Set RegEx = CreateObject("vbscript.regexp")
-
-    RegEx.Pattern = RegExpression
-    RegEx.IgnoreCase = True
-    RegEx.Global = True
-
-    Dim Matches As Object
-    Set Matches = RegEx.Execute(ISIN)
-
-    CountRegEx = Matches.Count
-
-End Function
-
-Function ExtractRegEx(ByVal text As String, RegExpression As String) As String
-
-Dim result As String
-Dim allMatches As Object
-Dim RE As Object
-Set RE = CreateObject("vbscript.regexp")
-
-RE.Pattern = RegExpression
-RE.Global = True
-RE.IgnoreCase = True
-Set allMatches = RE.Execute(text)
-
-If allMatches.Count <> 0 Then
-    result = allMatches.Item(0).SubMatches.Item(0)
-End If
-
-ExtractRegEx = result
-
-End Function
-
 
 
    
