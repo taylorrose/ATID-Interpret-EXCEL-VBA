@@ -1,4 +1,4 @@
-Excel-VBA-Macros
+<h1>ATID Interpret</h1>
 ================
 
 Excel VBA Programs for data analysis
@@ -21,7 +21,7 @@ Created September 24, 2014
 <h2>Parameters</h2>
 
 <p>
-ATIDString - The ATID colon deliminated string you'd like to interpet, e.g., 28386:20220:20203 or b2
+'''ATIDString''' - The ATID colon deliminated string you'd like to interpet, e.g., 28386:20220:20203 or b2
 <br>
 vlRange - The range of the lookup table you're using to interpret ATID, e.g., Sheet2!A:F
 <br>
