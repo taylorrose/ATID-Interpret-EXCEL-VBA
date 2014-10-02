@@ -13,13 +13,14 @@ Attribute VB_Name = "atidInterpret"
 '           * Specifications / limitations
 '               -ATID in lookuptable must be formatted as string (text), not an integer (number)
 '           * Arguments
-'               - ByVal txt As String : the text to search in
-'               - ByVal matchPattern As String : the regular expression pattern
-'               - ByVal replacePattern As String : the replacement pattern
+'               ATIDString - The ATID colon deliminated string you'd like to interpet, e.g. , 28386:20220:20203 or b2
+'               vlRange - The range of the lookup table you're using to interpret ATID, e.g., Sheet2!A:F 
+'               primaryColumn - The number of the column you want to pass as your primary interpretation, e.g. , 6 
+'               secondayColumn - The number of the column you want to pass as a fallback if the primary column you select is blank or "NULL" on certain rows, e.g. , 5
 '       
 '       Revisions history
 '       -----------------
-'           - Taylor Rose        09/07/2014      v0.1        Creation
+'           - Taylor Rose        09/07/2014      v1.0       Creation
 '
 '---------------------------------------------------------------------------------------------------------------------------------
 Function atidInterpret(ATIDString As String, vlRange As Range, primaryColumn As Integer, secondaryColumn As Integer)
