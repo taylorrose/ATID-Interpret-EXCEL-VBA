@@ -1,4 +1,28 @@
-Attribute VB_Name = "Module1"
+Attribute VB_Name = "atidInterpret"
+'---------------------------------------------------------------------------------------------------------------------------------------------
+'
+'   ATID Interpret v1.0
+'
+'
+'
+'   Functions lists
+'   ---------------
+'
+'       + Function atidInterpret(ATIDString As String, vlRange As Range, primaryColumn As Integer, secondaryColumn As Integer)
+'           * Description : Use a lookup table to convert an ATID String, e.g., ****** to an ordered list of attribution names
+'           * Specifications / limitations
+'               - Multiline
+'               - Not case sensitive
+'           * Arguments
+'               - ByVal txt As String : the text to search in
+'               - ByVal matchPattern As String : the regular expression pattern
+'               - ByVal replacePattern As String : the replacement pattern
+'       
+'       Revisions history
+'       -----------------
+'           - Taylor Rose        09/07/2014      v0.1        Creation
+'
+'---------------------------------------------------------------------------------------------------------------------------------
 Function atidInterpret(ATIDString As String, vlRange As Range, primaryColumn As Integer, secondaryColumn As Integer)
 Dim atidArray() As String
 atidArray() = Split(ATIDString, ":")
