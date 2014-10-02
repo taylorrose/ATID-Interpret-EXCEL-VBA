@@ -20,7 +20,9 @@ Created September 24, 2014
 
 4. Call the atidInterpret function in the cell you'd like the interpretation to reside. The function takes 4 parameters: ATIDString , vlRange , primaryColumn , secondaryColumn. You can see these parameters by calling atidInterpret and hitting Ctl+Shift+A.
 
-<h2>Parameters `=atidInterpret(ATIDString, vlRange , primaryColumn , secondaryColumn )`</h2> 
+<h2>Parameters </h2> 
+
+Formula: `=atidInterpret(ATIDString, vlRange , primaryColumn , secondaryColumn )`
 
 
 `ATIDString` - The ATID colon deliminated string you'd like to interpet, e.g., 28386:20220:20203 or b2
