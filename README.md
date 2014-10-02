@@ -5,7 +5,6 @@ ATID Interpret
 Created by Taylor Rose September 24, 2014
 
 <h2>Install and Use</h2>
-</p><br>
 
 1. Enable the Developer tab/ribbon and click on the Visual Basic button in the far left corner to bring up Visual Basic Editor ( <alt+F11> or <fn+alt+F11> on Mac parallels)
 
