@@ -1,9 +1,8 @@
 ATID Interpret
 ================
 
-ATID Interpret
-Taylor Rose
-Created September 24, 2014
+
+Created by Taylor Rose September 24, 2014
 
 <h2>Install and Use</h2>
 </p><br>
