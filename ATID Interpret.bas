@@ -9,10 +9,9 @@ Attribute VB_Name = "atidInterpret"
 '   ---------------
 '
 '       + Function atidInterpret(ATIDString As String, vlRange As Range, primaryColumn As Integer, secondaryColumn As Integer)
-'           * Description : Use a lookup table to convert an ATID String, e.g., ****** to an ordered list of attribution names
+'           * Description : Use a lookup table to convert an ATID String, e.g., "28386:20220:28386:20203" to an ordered list, e.g.,  "1)Organic Search 2)Wireless 3)Organic Search 4)Unbranded"
 '           * Specifications / limitations
-'               - Multiline
-'               - Not case sensitive
+'               -ATID in lookuptable must be formatted as string (text), not an integer (number)
 '           * Arguments
 '               - ByVal txt As String : the text to search in
 '               - ByVal matchPattern As String : the regular expression pattern
