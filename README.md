@@ -17,7 +17,7 @@ Created by Taylor Rose September 24, 2014
 
 <h2>Parameters </h2> 
 
-Formula Example: `atidInterpret(ATIDString , vlRange , primaryColumn , secondayColumn)` , e.g. , `=atidInterpret(b2,Sheet2!A:F,6,5)`
+*Formula Example:* `atidInterpret(ATIDString , vlRange , primaryColumn , secondayColumn)` , e.g. , `=atidInterpret(b2,Sheet2!A:F,6,5)`
 
 
 `ATIDString` - The ATID colon deliminated string you'd like to interpet, e.g., `28386:20220:20203` or `b2`
