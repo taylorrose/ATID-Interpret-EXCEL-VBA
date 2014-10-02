@@ -1,14 +1,10 @@
-<h1>ATID Interpret</h1>
+ATID Interpret
 ================
 
-Excel VBA Programs for data analysis
-
-<p>
-----------------------------
 ATID Interpret
 Taylor Rose
 Created September 24, 2014
-----------------------------
+
 <h2>Install and Use</h2>
 </p><br>
 
