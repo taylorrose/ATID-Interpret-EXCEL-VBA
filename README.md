@@ -9,7 +9,7 @@ ATID Interpret
 Taylor Rose
 Created September 24, 2014
 ----------------------------
-Install and Use
+<h2>Install and Use</h2>
 </p><br>
 
 <ol>
@@ -18,12 +18,16 @@ Install and Use
 <li>Close Visual Basic Editor window to return to your spreadsheet. Select the tab you want to store your lookup information. NOTE: ATID Interpret looksup values as strings so you may need to convert the first column from integers to strings. Insert a new first column and use formula =text(b2,"0") in cell A2.</li>
 <li>4) Call the atidInterpret function in the cell you'd like the interpretation to reside. The function takes 4 parameters: ATIDString , vlRange , primaryColumn , secondaryColumn. You can see these parameters by calling atidInterpret and hitting Ctl+Shift+A.</li>
 
-Parameters
+<h2>Parameters</h2>
 
+<p>
 ATIDString - The ATID colon deliminated string you'd like to interpet, e.g., 28386:20220:20203 or b2
+<br>
 vlRange - The range of the lookup table you're using to interpret ATID, e.g., Sheet2!A:F
+<br>
 primaryColumn - The number of the column you want to pass as your primary interpretation, e.g. , 6
+<br>
 secondayColumn - The number of the column you want to pass as a fallback if the primary column you select is blank or "NULL" on certain rows
-
+</p>
 
 
