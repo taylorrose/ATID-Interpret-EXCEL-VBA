@@ -21,11 +21,12 @@ Attribute VB_Name = "atidInterpret"
 '       Revisions history
 '       -----------------
 '           - Taylor Rose        09/07/2014      v1.0       Creation
+'           - Taylor Rose        10/09/2014      v1.01       Added Delim as parameter
 '
 '---------------------------------------------------------------------------------------------------------------------------------
-Function atidInterpret(ATIDString As String, vlRange As Range, primaryColumn As Integer, secondaryColumn As Integer)
+Function atidInterpret(ATIDString As String, delim As String, vlRange As Range, primaryColumn As Integer, secondaryColumn As Integer)
 Dim atidArray() As String
-atidArray() = Split(ATIDString, ":")
+atidArray() = Split(ATIDString, delim)
 ArrLength = UBound(atidArray)
 
 Dim Vlook1 As String
@@ -36,6 +37,7 @@ For i = 0 To ArrLength
 
 On Error Resume Next
 Err.Clear
+
     If Not Application.WorksheetFunction.VLookup(atidArray(i), vlRange, primaryColumn, 0) = 0 And Not Application.WorksheetFunction.VLookup(atidArray(i), vlRange, primaryColumn, 0) = "NULL" Then
         Vlook1 = Application.WorksheetFunction.VLookup(atidArray(i), vlRange, primaryColumn, 0)
     Else
