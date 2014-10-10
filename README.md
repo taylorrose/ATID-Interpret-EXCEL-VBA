@@ -12,17 +12,18 @@ Use a lookup table to convert an ATID string to a readable attribution list:
 
 2. Go to file > Import File... ( Ctl+m ) and select ATID Interpret.bas
 
-3. Close Visual Basic Editor window to return to your spreadsheet. Select the tab you want to store your lookup information. NOTE: ATID Interpret looksup values as strings so you may need to convert the first column from integers to strings. Insert a new first column and use formula `=text(b2,"0")` in cell A2.
+3. Close Visual Basic Editor window to return to your spreadsheet. Select the tab you want to store your lookup information. NOTE: ATID Interpret looksup values as strings so you may need to convert the first column to strings if your values are numbers. Insert a new first column and use formula `=text(b2,"0")` in cell A2.
 
-4. Call the atidInterpret function in the cell you'd like the interpretation to reside. The function takes 4 parameters: `ATIDString` , `vlRange` , `primaryColumn` , `secondaryColumn`. You can see these parameters by calling `=atidInterpret` in your fomula bar and hitting Ctl+Shift+A.
+4. Call the atidInterpret function in the cell you'd like the interpretation to reside. The function takes 5 parameters: `ATIDString` , `delim`, `vlRange` , `primaryColumn` , `secondaryColumn`. You can see these parameters by calling `=atidInterpret` in your fomula bar and hitting Ctl+Shift+A.
 
 <h2>Parameters </h2> 
 
-*Formula Example:* `atidInterpret(ATIDString , vlRange , primaryColumn , secondayColumn)` , *e.g.* , `=atidInterpret(b2,Sheet2!A:F,6,5)`
+*Formula Example:* `atidInterpret(ATIDString , delim, vlRange , primaryColumn , secondayColumn)` , *e.g.* , `=atidInterpret(b2,":",Sheet2!A:F,6,5)`
 
 
 `ATIDString` - The ATID colon deliminated string you'd like to interpet, *e.g.* , `28386:20220:20203` or `b2`
 <br>
+`delim` - The deliminator you want to split your ATIDString by, *e.g.* , `:` Note: Stored as string so use quotes `":"`
 `vlRange` - The range of the lookup table you're using to interpret ATID, *e.g.*, `Sheet2!A:F`
 <br>
 `primaryColumn` - The number of the column you want to pass as your primary interpretation, *e.g.* , `6`
