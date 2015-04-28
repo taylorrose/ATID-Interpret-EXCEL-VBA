@@ -17,6 +17,12 @@ Attribute VB_Name = "atidInterpret"
 '               vlRange - The range of the lookup table you're using to interpret ATID, e.g., Sheet2!A:F 
 '               primaryColumn - The number of the column you want to pass as your primary interpretation, e.g. , 6 
 '               secondayColumn - The number of the column you want to pass as a fallback if the primary column you select is blank or "NULL" on certain rows, e.g. , 5
+'
+'
+'       + Function ATID(ATIDstr As String, VRange As Range)
+'           *Description : Similar to atidInterpret but a little simpler as doesn not produce ordered list
+'           *Specification / limitations
+'            - Does NOT require lookup table to be strings: Keep values as integers
 '       
 '       Revisions history
 '       -----------------
