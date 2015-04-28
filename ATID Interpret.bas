@@ -22,7 +22,7 @@ Attribute VB_Name = "atidInterpret"
 '       -----------------
 '           - Taylor Rose        09/07/2014      v1.0       Creation
 '           - Taylor Rose        10/09/2014      v1.01       Added Delim as parameter
-'
+'           - Taylor Rose        04/28/2015      v1.02      Added Simple Interprestion
 '---------------------------------------------------------------------------------------------------------------------------------
 Function atidInterpret(ATIDString As String, delim As String, vlRange As Range, primaryColumn As Integer, secondaryColumn As Integer)
 Dim atidArray() As String
@@ -53,6 +53,26 @@ Next i
 
 atidInterpret = Vlook2
 
+
+End Function
+
+Function ATID(ATIDstr As String, VRange As Range)
+
+Dim Arr
+Arr = Split(ATIDstr, ":")
+ATID = Application.WorksheetFunction.VLookup(Val(Arr(0)), VRange, 2, 0)
+
+
+For i = 1 To UBound(Arr)
+    Dim res As Variant
+    On Error Resume Next
+    res = Application.WorksheetFunction.VLookup(Val(Arr(i)), VRange, 2, 0)
+    If Err.Number = 0 Then
+        ATID = ATID & " : " & res
+    Else
+        ATID = ATID & " : " & "Unknown"
+    End If
+Next i
 
 End Function
 
